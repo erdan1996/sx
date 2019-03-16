@@ -1,0 +1,154 @@
+.header-bottom ul li .current {
+  border-bottom: 4px solid #9FCF7A;
+}
+
+.header-bottom ul li a {
+  height: 83px;
+}
+
+.data {
+  background: rgba(242, 243, 247, 1);
+}
+
+.band {
+  height: 72px;
+  color: rgba(87, 96, 111, 1);
+  line-height: 72px;
+}
+
+.center {
+  display: flex;
+  height: 500px;
+}
+
+.center-left {
+  width: 248px;
+  height: 197px;
+  background-color: #fff;
+  margin-right: 20px;
+}
+
+.center-left li {
+  background-color: #fff;
+  text-align: center;
+}
+
+#con  .videodata {
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#con  .videodata li {
+  width: 284px;
+  height: 250px;
+  margin-right: 64px;
+  cursor: pointer;
+}
+
+#con .videodata li:nth-child(3n) {
+  margin-right: 0px;
+}
+
+#con .videodata li .img {
+  width: 284px;
+  height: 201px;
+  background: rgba(179, 179, 179, 1);
+  border-radius: 6px;
+}
+#con .videodata li p {
+  height: 30px;
+}
+#wrap {
+  width: 1300px;
+  overflow: hidden;
+  display: flex;
+}
+
+#tit {
+  width: 248px;
+  height: 197px;
+  margin-right: 20px;
+}
+
+
+#tit span {
+  display: block;
+  height: 66px;
+  line-height: 66px;
+  width: 248px;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+}
+
+#con .firstli {
+  display: none;
+  width: 1028px;
+  text-align: center;
+}
+
+#tit span.select {
+  background: rgba(0, 160, 233, 1);
+  color: #fff;
+}
+
+#con li.show {
+  display: block;
+}
+.firstli .fileul {
+  margin-bottom: 10px;
+}
+.firstli .fileul .fileli .marker {
+  display: inline-block;
+  width: 10px;
+  height: 10px;          
+  border-radius: 10px;      
+  background-color: #000;
+  margin: 20px 20px 0 20px;
+}
+.firstli .fileul .fileli {
+  display: flex;
+  height: 50px;
+}
+.firstli .fileul .fileli:hover {
+  color: rgba(0, 160, 233, 1);
+  cursor: pointer;
+}
+.firstli .fileul .fileli:hover a {
+  color: rgba(0, 160, 233, 1);
+}
+.firstli .fileul .fileli:hover span {
+  background-color:rgba(0, 160, 233, 1);
+}
+.firstli .fileul .fileli p {
+  line-height: 50px;
+  width: 880px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: 50px;
+}
+.firstli .fileul .fileli a {
+  line-height: 50px;
+}
+#pagenation {
+  width: 1028px;
+  text-align: center;
+  height: 50px;
+}
+#pagenation span {
+  display: inline-block;
+  cursor: pointer;
+  width:22px;
+  height:22px;
+  border:1px solid #f1f2f6;
+  border-radius:3px;
+  color: #000;
+  padding: 5px;
+}
+#pagenation span:hover {
+  background:rgba(92,158,193,1);
+  color: #fff;
+}

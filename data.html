@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./footer.css" />
   <link rel="stylesheet" href="./data.css" />
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-  <title>Document</title>
+  <title>山溪网络</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
   <div class="data">
     <header>
       <div class="header-top">
-        <img src="" alt="" />
+          <img src="banner.jpg" alt="" />
       </div>
       <div class="header-bottom w">
         <ul>
@@ -29,12 +29,12 @@
             </a>
           </li>
           <li>
-            <a href="index.html">
+            <a href="dynamic.html">
               项目动态
             </a>
           </li>
           <li>
-            <a href="index.html">
+              <a href="index.html#friends">
               山溪网略成长伙伴
             </a>
           </li>
@@ -44,7 +44,7 @@
             </a>
           </li>
           <li>
-            <a href="index.html">
+            <a href="join.html">
               如何加入山溪网络
             </a>
           </li>
@@ -75,20 +75,20 @@
             <ul id="con">
 
               <li class="show firstli">
-                <ul class="videodata">
-                  <li>
+                <ul class="videodata" id="show">
+                  <li class="secondli">
                     <div class="img">
                       <img src="" alt="">
                     </div>
                     <p>增资扩股还是向股东借款</p>
                   </li>
-                  <li>
+                  <li class="secondli">
                     <div class="img">
                       <img src="" alt="">
                     </div>
                     <p>增资扩股还是向股东借款</p>
                   </li>
-                  <li>
+                  <li class="secondli">
                     <div class="img">
                       <img src="" alt="">
                     </div>
@@ -142,6 +142,10 @@
       </div>
     </footer>
   </div>
+  <div class="dialog">
+    <video src="https://v.youku.com/v_show/id_XNDEwMDEwMDQ2OA==.html" controls="controls"></video>
+    <img src="close.png" id="close" />
+  </div>
 </body>
 <script src="./jquery.tabs.js"></script>
 <script src="./layui.js"></script>
@@ -165,6 +169,16 @@
       $('#con .firstli').eq(i).show().siblings().hide();
 
     });
+
+    var list = document.getElementsByClassName('secondli')
+    for(var i = 0;i<list.length;i++){
+      list[i].onclick = function(){
+        $('.dialog').show()
+      }
+    }
+      $('#close').click(function(){
+        $('.dialog').hide()
+      })
   })
 </script>
 

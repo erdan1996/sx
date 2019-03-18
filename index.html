@@ -11,19 +11,19 @@
   <link rel="stylesheet" href="./footer.css" />
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
   <script src="super_slider.js" type="text/javascript"></script>
-  <title>Document</title>
+  <title>山溪网络</title>
 </head>
 
 <body>
   <!-- 头部图片+锚链接 -->
   <header>
     <div class="header-top">
-      <img src="" alt="" />
+      <img src="banner.jpg" alt="" />
     </div>
     <div class="header-bottom w">
       <ul>
         <li>
-          <a href="#intro">
+          <a href="#intro" class="current">
             项目简介
           </a>
         </li>
@@ -43,7 +43,7 @@
           </a>
         </li>
         <li>
-          <a href="#join">
+          <a href="join.html">
             如何加入山溪网络
           </a>
         </li>
@@ -52,16 +52,12 @@
   </header>
   <!-- 简介 -->
   <div id="intro">
-    <div class="w">
-      <p>
-        内容内容内容内容内容内容内容内容内容内容
-        内容内容内容内容内容内容内容内容内容内容内容内容内容
-        内容内容内容内容内容内容内容内容内容内容
-        内容内容内容内容内容内容内容内容内容内容内容内容内
-        内容内容内容内容内容内容内容内容内容内容
-        内容内容内容内容内容内容内容内容内容内容内容内容内
+    <div class="w introself">
+      <p  id="test" style="display: block;height: 200px;overflow-y: hidden">
+          <!-- 测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试 -->
       </p>
-      <a href="">更多</a>
+      <a href="javascript:void(0)" id="show" style="display:block;" onclick="document.getElementById('test').style.height='500px';document.getElementById('hidden').style.display='block';document.getElementById('show').style.display='none';">更多</a>
+      <a href="javascript:void(0)" id="hidden" style="display:none;" onclick="document.getElementById('test').style.height='200px';document.getElementById('hidden').style.display='none';document.getElementById('show').style.display='block';">关闭</a>
     </div>
   </div>
   <!-- 动态 -->
@@ -69,7 +65,7 @@
     <div class="w">
       <div class="dynamic-top">
         <h4>项目动态</h4>
-        <a href="">更多</a>
+        <a href="dynamic.html">更多</a>
       </div>
       <div class="dynamic-bottom">
         <div class="box demo1">
@@ -244,7 +240,7 @@
         <h4>
           伙伴
         </h4>
-        <a href="">更多</a>
+        <a href="">伙伴</a>
       </div>
       <div class="friends-bottom">
         <div class="box1">
@@ -333,6 +329,18 @@
 <script src="./jquery.tabs.js"></script>
 <script>
   $(function () {
+
+      $(".header-bottom ul li a").hover(function () {
+        $("a").eq(0).removeClass("current")
+        $(this).addClass("current");
+      }, function () {
+        $(this).removeClass("current");
+        $("a").eq(0).addClass("current");
+      });
+      var str = 
+      "语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句测试语句句测试语句测试语句测试语句测试语句测试语句测试语句";
+      document.getElementById("test").innerText=str;
+
     $(".header-bottom ul li a").click(function () {
       var hr = $(this).attr("href");
       var anh = $(hr).offset().top;

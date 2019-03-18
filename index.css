@@ -1,13 +1,15 @@
 
 
 #intro {
-  height: 252px;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
   padding: 40px;
 }
-
+.introself {
+  position: relative;
+  width: 1300px;
+}
 #intro p {
   line-height: 50px;
   color: #57606F;
@@ -15,9 +17,11 @@
 
 #intro a {
   position: absolute;
-  right: 20%;
-  bottom: 40px;
+  right: 0px;
+  /* right: 116px;
+  bottom: 40px; */
   color: #57606F;
+  text-align: center;
 }
 
 .box {

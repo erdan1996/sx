@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./base.css" />
+  <link rel="stylesheet" href="./header.css" />
+  <link rel="stylesheet" href="./footer.css" />
+  <link rel="stylesheet" href="./data.css" />
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <img src="" alt="" />
+    </div>
+    <div class="header-bottom w">
+      <ul>
+        <li>
+          <a href="index.html">
+            项目简介
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            项目动态
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            山溪网略成长伙伴
+          </a>
+        </li>
+        <li>
+          <a href="data.html" class="current">
+            项目资料
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            如何加入山溪网络
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="w">
+    
+  </div>
+  <footer>
+    <div class="w">
+      <p>
+        版权所有：陕西妇女儿童发展基金会
+      </p>
+      <p>地址：陕西省西安市雁塔路南段99号 邮编：710054</p>
+      <p>电话：029-85582226 传真：029-85582223 E-mail:sxwcdf@126.com</p>
+      <p> 陕ICP备13008895-1号 技术支持：大唐云信息科技</p>
+    </div>
+  </footer>
+</body>
+<script>
+  $(function () {
+    $("ul li a").hover(function () {
+      $("a").eq(3).removeClass("current")
+      $(this).addClass("current");
+    }, function () {
+      $(this).removeClass("current");
+      $("a").eq(3).addClass("current");
+    });
+   
+  })
+</script>
+
+</html>

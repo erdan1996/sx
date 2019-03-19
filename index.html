@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./css/base.css" />
   <link rel="stylesheet" href="./css/header.css" />
   <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
   <script src="./js/super_slider.js" type="text/javascript"></script>
   <title>山溪网络</title>
@@ -18,7 +20,23 @@
   <!-- 头部图片+锚链接 -->
   <header>
     <div class="header-top">
-      <img src="./images/banner.jpg" alt="" />
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/banner.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/banner.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/banner.jpg" alt="">
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        
+        
+    </div>
     </div>
     <div class="header-bottom w">
       <ul>
@@ -362,6 +380,17 @@
       showNum: 6, //显示数量
       autoPlay: true //自动播放
     });
+
+
+
+    var mySwiper = new Swiper('.swiper-container', {
+	    autoplay: true,//可选选项，自动滑动
+      direction: 'horizontal',
+      loop: true,
+      pagination: {
+      el: '.swiper-pagination',
+    }
+    })
   });
 </script>
 
